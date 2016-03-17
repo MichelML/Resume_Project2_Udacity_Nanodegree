@@ -1,0 +1,142 @@
+{
+    "bio": {
+        "name" : "Michel Moreau",
+        "role" : "Research Professional",
+        "secondaryrole" : "Programmer in the making",
+        "contacts" : {
+              "mobile": "on request only",
+              "twitter":"https://twitter.com/mimolap",
+              "email": "mailto:michmoreau.l@gmail.com" ,
+              "github": "https://github.com/MichelML",
+              "linkedin": "https://ca.linkedin.com/in/michelmoreau1", 
+              "location": "Quebec city, Canada"
+        },
+        "welcomeMessage": "<br>I am Michel and I am pleased to have you here.<br><br>I would describe me as someone who strives to think about, improve, and create things that could bring value to people and humanity. I try to meet this goal by constantly reading books, learning autonomously and methodically, as well as taking part in research projects of different kind.<br><br>Outside of work, I also love playing basketball and soccer, backpacking, hiking, and laughing a lot.<br><br>Please reach out to me if you think I can help for something. <br><br>Enjoy the surfing!", 
+        "skills": ["Web Development", "Research", "Project Coordination", "Data Analysis", "Team Leadership", "Human Motivation", "Scientific Writing", "Public Health", "Exercise for Health"],
+        "biopic": "images/michsam_opt.png"
+    },
+    "education": {
+        "schools": [
+          {
+              "name": "Université Laval",
+              "location": "Quebec city, Canada",
+              "degree": "M.Sc. Public Health",
+              "majors": "Health Promotion and Behavior Change",
+              "dates": "January 2015",
+              "url": "http://www2.ulaval.ca/accueil.html"            
+          },
+          {
+              "name": "Université Laval",
+              "location": "Quebec city, Canada",
+              "degree": "B.Sc. Kinesiology",
+              "majors": "Sports Performance",
+              "dates": "April 2012",
+              "url": "http://www2.ulaval.ca/accueil.html"            
+          }
+        ],
+      "onlineCourses": [
+        {
+              "title": "Front-End Web Developer Nanodegree",
+              "school": "Udacity",
+              "date": "April 2016",
+              "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+        },
+        {
+              "title": "Full Stack Web Development Specialization",
+              "school": "Hong Kong University of Science and Technology",
+              "date": "April 2016",
+              "url": "https://www.coursera.org/specializations/full-stack"
+        },
+        {
+              "title": "Data Science Specialization",
+              "school": "Johns Hopkins Bloomberg School of Public Health",
+              "date": "May 2015",
+              "url": "https://www.coursera.org/specializations/jhu-data-science"
+        }
+      ]
+    },
+  "work": {
+    "jobs": [
+      {
+        "employer": "Centre de Recherche du CHU de Québec",
+        "employerlink": "http://www.crchudequebec.ulaval.ca/en",
+        "title": "Research Professional",
+        "location": "Québec city, Canada",
+        "dates": "February 2016 - June 2016",
+        "description": "Development and evaluation of scientific summaries and tools to assist informed and shared decision-making during physician-patient consultations — knowledge transfer"
+      },
+      {
+        "employer": "Université Laval",
+        "employerlink": "https://www2.ulaval.ca/en.html",
+        "title": "Research Professional",
+        "location": "Québec city, Canada",
+        "dates": "January 2016 - April 2016",
+        "description": "Responsible for leading a systematic review on the surveillance of employees in an organizational justice perspective."
+      },
+      {
+        "employer": "Université du Québec à Trois-Rivières",
+        "employerlink": "http://uqtr.ca/",
+        "title": "Research Professional",
+        "location": "Québec city, Canada",
+        "dates": "September 2013 - December 2015",
+        "description": "Responsible for writing scientific papers in peer-reviewed journals, conducting data analysis, coordinating a web-based randomized controlled trial, developing a personalized web service for helping people with diabetes exercise regularly, contributing actively to a full grant application process."
+      },
+      {
+        "employer": "Canada Research Chair in Technologies and Practices in Health, Université Laval",
+        "employerlink": "https://www2.ulaval.ca/en.html",
+        "title": "Research assistant",
+        "location": "Québec city, Canada",
+        "dates": "June 2013 - August 2013",
+        "description": "Participating to the update of a systematic review Cochrane, gaining knowledge on the techniques utilized in conducting this kind of systematic review."
+      },
+      {
+        "employer": "Kira Burundi Inc.",
+        "employerlink": "http://kiraburundi.org/",
+        "title": "Volontary work",
+        "location": "Québec city, Canada",
+        "dates": "May 2012 - Present",
+        "description": "Developing the organization's website, planning events, managing online donations, filling contest applications."
+      },
+      {
+        "employer": "CEGEP Garneau, Énergie Cardio",
+        "employerlink": "https://www.energiecardio.com/en",
+        "title": "Personal trainer",
+        "location": "Québec city, Canada",
+        "dates": "January 2010 - May 2011",
+        "description": "Building exercise programs tailored to clients' needs, objectives and wants, exploring clients' needs and questions through effective interpersonal communication."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title":"Web Portfolio Project",
+      "link": "https://github.com/MichelML/Portfolio_Project1_Udacity_Nanodegree",
+      "dates": "In Progress",
+      "description": "A website showing my work as a web developer",
+      "images": ["images/previewdesktop_opt.png"]
+    },
+    {
+      "title":"Personal Website Project",
+      "link": "http://michelmoreau.ca/",
+      "dates": "In Progress",
+      "description": "My personal website made with the Freelancer Bootstrap theme",
+      "images": ["images/personalwebsite_opt.png"]
+    },
+    {
+      "title":"TODOZEN",
+      "dates": "In Progress",
+      "link": "http://michelmoreau.ca/todomaterial/index2.html",
+      "description": "To-do list web app made with a material design framework.",
+      "images": ["images/todozen_opt.png"]
+    },
+    {
+      "title":"Diabète en Forme",
+      "link": "http://www.diabeteenforme-demo.ca/",
+      "dates": "January 2014",
+      "description": "Web service helping people with diabetes exercise regularly.",
+      "images": ["images/diabeteenforme_opt.png"]
+    }
+  ],
+  "travellocations": ["Thailand", "Laos", "Cambodia", "Vietnam", "Chile", "Austria", "Italy", "Germany", "Ireland", "Maastricht, Netherlands", "Spain", "Portugal", "Costa Rica", "Bolivia", "Maine, US", "North Carolina, US", "Cuba", "Isla Holbox, Mexico"],
+  "birthplace": "Montreal, Qc, Canada"
+}

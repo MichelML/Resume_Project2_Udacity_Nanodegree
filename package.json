@@ -1,0 +1,37 @@
+{
+  "name": "cv_mm",
+  "version": "1.0.0",
+  "description": "cv of mm",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichelML/Resume_Project2_Udacity_Nanodegree.git"
+  },
+  "keywords": [
+    "cv",
+    "mm",
+    "ajax",
+    "map"
+  ],
+  "author": "MM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichelML/Resume_Project2_Udacity_Nanodegree/issues"
+  },
+  "homepage": "https://github.com/MichelML/Resume_Project2_Udacity_Nanodegree#readme",
+  "dependencies": {
+    "remodal": "^1.0.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-pngquant": "^4.2.2"
+  }
+}

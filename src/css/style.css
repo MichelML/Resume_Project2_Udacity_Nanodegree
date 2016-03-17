@@ -1,0 +1,385 @@
+/********
+ UDACITY DEFAULT - BEGINNING
+ Minor changes have been made to the original version of the css file, only additional rules were added
+********/
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding:0;
+  margin:0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+h1 {
+  font-size: 40px;
+  color: #efb509;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #999;
+  line-height: 29px;
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #cd7213;
+  line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  padding:10px 5%;
+
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: right;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 21px;
+}
+
+a {
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+  font-style: italic;
+  font-size: 18px;
+  color: #111;
+}
+
+.orange {
+  background-color: #efb509;
+}
+
+.orange-text {
+  color: #efb509;
+  font-weight: bold;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.gray {
+  background-color: #999;
+  padding-bottom: 10px;
+  clear:both;
+}
+
+.dark-gray {
+  background-color: #002c54;
+}
+
+#header {
+  background-color: #002c54;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  position: relative;
+  margin:10px auto;
+  padding: 0px;
+  width: 200px;
+  border-radius: 50px;
+  display: block;
+  box-shadow: 0 0 5px #efb509;
+}
+
+img {
+  padding: 10px;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+#map {
+  position: relative;
+  display: block;
+  margin:auto;
+  height: 100%;
+}
+
+#mapDiv {
+  height: 400px;
+  padding-bottom: 5%;
+}
+
+/********
+ UDACITY DEFAULT - END
+ PERSONAL CSS RULES - BEGINNING
+********/
+
+#role {
+  color:white;
+}
+
+.welcome-message {
+  font-style: normal;
+  text-align: center;
+  line-height: 16px;
+}
+
+#show-welcome-button {
+  font-weight: bold;
+  text-shadow: 0px 1px 1px #999;
+  margin:0 1px;
+  height: 35px;
+  min-width: 125px;
+  max-width:125px;
+  margin: auto;
+  box-shadow: -2px 2px 1px #666;
+}
+
+.btn-warning {
+  background-color: #efb509;
+  border:none;
+}
+
+.btn-warning:hover {
+  background-color: #4285f4;
+}
+
+.btn-primary {
+  background-color: #efb509;
+  padding:0;
+  margin:0 1px;
+  border:none;
+  height: 35px;
+  min-width: 125px;
+  max-width:125px;
+  text-shadow: 0 1px 1px #999;
+  box-shadow: 2px 2px 1px #666;
+}
+
+.btn-primary:hover {
+  background-color: #4285f4;
+}
+
+.btn-primary * {
+  font-weight: bold;
+}
+
+
+#topContacts li:first-child {
+  margin-bottom: 10px;
+}
+
+#topContacts a,
+#footerContacts a
+{
+  color:#fff;
+  text-decoration: none;
+}
+
+#footer-contacts-div {
+  background-color: #16253d;
+  margin:0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#topContacts a:hover,
+#footerContacts a:hover {
+  color:#4285f4;
+  text-decoration: none;
+}
+
+#topContacts li:not(:nth-child(1)),
+#footerContacts li {
+  display:inline-block;
+  margin:0 25px;
+}
+
+#welcome-skills {
+  margin-top:20px;
+  margin-bottom: 20px;
+  padding:10px;
+}
+
+#workExperience h2 {
+  text-align: center;
+  margin-top:1px;
+  color:white;
+  background-color: #cd7213;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-top:1px;
+  color:white;
+  opacity: 0.9;
+  background-color: #002c54;
+}
+
+#education h2 {
+  text-align: center;
+  margin-top:1px;
+  color:white;
+  opacity: 0.8;
+  background-color: #efb509;
+}
+
+#mapDiv h2 {
+  text-align: center;
+  color:white;
+  margin-bottom:10px;
+  margin-top:1px;
+  opacity: 0.9;
+  background-color: #4285f4;
+}
+
+.work-entry:nth-child(odd),
+.project-entry:nth-child(odd),
+.education-entry:nth-child(odd) {
+  background-color: rgba(10,10,10,.1);
+}
+
+.work-entry:nth-child(n),
+.project-entry:nth-child(n),
+.education-entry:nth-child(n) {
+  padding:30px 10px;
+}
+
+#skills {
+  margin-top:25px;
+}
+
+#map {
+  max-width:500px;
+}
+
+#mapDiv {
+  margin:auto;
+}
+
+#education h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: rgba(239,181,9,0.3);
+}
+
+.img-responsive {
+  max-height:350px;
+}
+
+/********
+ PERSONAL CSS RULES - END
+ MEDIA QUERIES - BEGINNING
+********/
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .biopic {
+    display: block;
+  }
+  
+  #welcomeDiv {
+    text-align: right;
+  }
+  
+  #skillsDiv {
+    text-align: left;
+  }
+  
+  .btn-primary {
+    margin:0 20px;
+  }
+}
+
+/********
+ MEDIA QUERIES - END
+********/
