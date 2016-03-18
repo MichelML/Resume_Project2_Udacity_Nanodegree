@@ -21,7 +21,7 @@
               "name": "Université Laval",
               "location": "Quebec city, Canada",
               "degree": "M.Sc. Public Health",
-              "majors": "Health Promotion and Behavior Change",
+              "majors": ["Health Promotion and Behavior Change"],
               "dates": "January 2015",
               "url": "http://www2.ulaval.ca/accueil.html"            
           },
@@ -29,7 +29,7 @@
               "name": "Université Laval",
               "location": "Quebec city, Canada",
               "degree": "B.Sc. Kinesiology",
-              "majors": "Sports Performance",
+              "majors": ["Sports Performance"],
               "dates": "April 2012",
               "url": "http://www2.ulaval.ca/accueil.html"            
           }
@@ -107,36 +107,38 @@
       }
     ]
   },
-  "projects": [
-    {
-      "title":"Web Portfolio Project",
-      "link": "https://github.com/MichelML/Portfolio_Project1_Udacity_Nanodegree",
-      "dates": "In Progress",
-      "description": "A website showing my work as a web developer",
-      "images": ["images/previewdesktop_opt.png"]
-    },
-    {
-      "title":"Personal Website Project",
-      "link": "http://michelmoreau.ca/",
-      "dates": "In Progress",
-      "description": "My personal website made with the Freelancer Bootstrap theme",
-      "images": ["images/personalwebsite_opt.png"]
-    },
-    {
-      "title":"TODOZEN",
-      "dates": "In Progress",
-      "link": "http://michelmoreau.ca/todomaterial/index2.html",
-      "description": "To-do list web app made with a material design framework.",
-      "images": ["images/todozen_opt.png"]
-    },
-    {
-      "title":"Diabète en Forme",
-      "link": "http://www.diabeteenforme-demo.ca/",
-      "dates": "January 2014",
-      "description": "Web service helping people with diabetes exercise regularly.",
-      "images": ["images/diabeteenforme_opt.png"]
-    }
-  ],
+  "projects": {
+    "projects": [
+     {
+       "title":"Web Portfolio Project",
+       "link": "http://michelmoreau.ca/other/nanoportfolio/index.html",
+       "dates": "In Progress",
+       "description": "A website showing my work as a web developer",
+       "images": ["images/previewdesktop_opt.png"]
+     },
+     {
+       "title":"Personal Website Project",
+       "link": "http://michelmoreau.ca/old_site/",
+       "dates": "In Progress",
+       "description": "My personal website made with the Freelancer Bootstrap theme",
+       "images": ["images/personalwebsite_opt.png"]
+     },
+     {
+       "title":"TODOZEN",
+       "dates": "In Progress",
+       "link": "http://michelmoreau.ca/other/todomaterial/index.html",
+       "description": "To-do list web app made with a material design framework.",
+       "images": ["images/todozen_opt.png"]
+     },
+     {
+       "title":"Diabète en Forme",
+       "link": "http://www.diabeteenforme-demo.ca/",
+       "dates": "January 2014",
+       "description": "Web service helping people with diabetes exercise regularly.",
+       "images": ["images/diabeteenforme_opt.png"]
+     }
+   ]
+  },
   "travellocations": ["Thailand", "Laos", "Cambodia", "Vietnam", "Chile", "Austria", "Italy", "Germany", "Ireland", "Maastricht, Netherlands", "Spain", "Portugal", "Costa Rica", "Bolivia", "Maine, US", "North Carolina, US", "Cuba", "Isla Holbox, Mexico"],
   "birthplace": "Montreal, Qc, Canada"
 }

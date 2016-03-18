@@ -76,18 +76,18 @@ $.getJSON("../mmoreauCV.json", function(data) {
         function createImages(i, j) {
             newHTMLimages = '';
             j = 0;
-            for (; j < cvObj.projects[i].images.length; j++) {
-                newHTMLimages += HTMLprojectImage.replace('%data%', cvObj.projects[i].images[j]);
+            for (; j < cvObj.projects.projects[i].images.length; j++) {
+                newHTMLimages += HTMLprojectImage.replace('%data%', cvObj.projects.projects[i].images[j]);
             }
             return newHTMLimages;
         }
 
-        for (; i < cvObj.projects.length; i++) {
+        for (; i < cvObj.projects.projects.length; i++) {
             newHTMLprojects += HTMLprojectStart.replace('</div>', '');
-            newHTMLprojects += HTMLprojectTitleLink.replace('%data%', cvObj.projects[i].link);
-            newHTMLprojects += HTMLprojectTitle.replace('%data%', cvObj.projects[i].title);
-            newHTMLprojects += HTMLprojectDates.replace('%data%', cvObj.projects[i].dates);
-            newHTMLprojects += HTMLprojectDescription.replace('%data%', cvObj.projects[i].description);
+            newHTMLprojects += HTMLprojectTitleLink.replace('%data%', cvObj.projects.projects[i].link);
+            newHTMLprojects += HTMLprojectTitle.replace('%data%', cvObj.projects.projects[i].title);
+            newHTMLprojects += HTMLprojectDates.replace('%data%', cvObj.projects.projects[i].dates);
+            newHTMLprojects += HTMLprojectDescription.replace('%data%', cvObj.projects.projects[i].description);
             newHTMLprojects += createImages(i, j);
             newHTMLprojects += '</div>';
         }
@@ -107,7 +107,7 @@ $.getJSON("../mmoreauCV.json", function(data) {
             newHTMLschool += HTMLschoolDegree.replace('%data%', cvObj.education.schools[i].degree);
             newHTMLschool += HTMLschoolDates.replace('%data%', cvObj.education.schools[i].dates);
             newHTMLschool += HTMLschoolLocation.replace('%data%', cvObj.education.schools[i].location);
-            newHTMLschool += HTMLschoolMajor.replace('%data%', cvObj.education.schools[i].majors);
+            newHTMLschool += HTMLschoolMajor.replace('%data%', cvObj.education.schools[i].majors[1]);
             newHTMLschool += '</div>';
         }
         if (cvObj.education.onlineCourses[0]) {
