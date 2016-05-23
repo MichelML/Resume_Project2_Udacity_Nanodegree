@@ -110,6 +110,13 @@
   "projects": {
     "projects": [
      {
+       "title":"HTML5 Arcade Game (LaddyBugger Allstar)",
+       "link": "http://michelmoreau.ca/ladybuggerallstar/",
+       "dates": "May 2016",
+       "description": "A HTML5 arcade game built as part of the Udacity's Front-End Nanodegree",
+       "images": ["images/arcadegame.png"]
+     },
+     {
        "title":"Web Portfolio Project",
        "link": "http://michelmoreau.ca/other/nanoportfolio/index.html",
        "dates": "In Progress",
@@ -120,7 +127,7 @@
        "title":"Personal Website Project",
        "link": "http://michelmoreau.ca/old_site/",
        "dates": "In Progress",
-       "description": "My personal website made with the Freelancer Bootstrap theme",
+       "description": "My old personal website made with the Freelancer Bootstrap theme",
        "images": ["images/personalwebsite_opt.png"]
      },
      {

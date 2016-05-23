@@ -260,7 +260,7 @@ span {
 #topContacts li:not(:nth-child(1)),
 #footerContacts li {
   display:inline-block;
-  margin:0 25px;
+  margin:0 15px;
 }
 
 #welcome-skills {
