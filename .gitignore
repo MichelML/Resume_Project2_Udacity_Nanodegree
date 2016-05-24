@@ -2,6 +2,10 @@
 ###################
 node_modules/
 
+# ftp info #
+###################
+*.ftppass
+
 # Compiled source #
 ###################
 *.com

@@ -5,7 +5,23 @@ const gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     uglify = require('gulp-uglify'),
-    htmlreplace = require('gulp-html-replace');
+    htmlreplace = require('gulp-html-replace'),
+    sftp = require('gulp-sftp');
+
+
+
+gulp.task('sftp', function () {
+	return gulp.src('./dist/*')
+		.pipe(sftp({
+			host: 'michelmoreau.ca',
+                        port: 21,
+			auth: 'keyMain',
+                        timeout: 999999
+		}));
+});
+
+
+
 
 gulp.task('css-merge-minify', () => {
     return gulp.src(['./src/bower_components/bootstrap/dist/css/bootstrap.min.css',
@@ -37,6 +53,11 @@ gulp.task('scripts2', () => {
         .pipe(gulp.dest('./dist/js/'));
 });
 
+gulp.task('json-to-dist', () => {
+    return gulp.src(['./mmoreauCV.json'
+        ])
+        .pipe(gulp.dest('./dist/'));
+});
 
 gulp.task('images', () => {
     return gulp.src('src/images/*')
@@ -68,4 +89,4 @@ gulp.task('htmlreplacement', ['copy-root-files'], function() {
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['css-merge-minify', 'scripts1', 'scripts2', 'copy-root-files', 'images', 'htmlreplacement']);
+gulp.task('default', ['css-merge-minify', 'scripts1', 'scripts2', 'copy-root-files', 'images', 'json-to-dist','htmlreplacement']);

@@ -31,7 +31,9 @@
     "gulp-html-replace": "^1.5.5",
     "gulp-imagemin": "^2.4.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-sftp": "^0.1.5",
     "gulp-uglify": "^1.5.3",
-    "imagemin-pngquant": "^4.2.2"
+    "imagemin-pngquant": "^4.2.2",
+    "rsync": "^0.4.0"
   }
 }
