@@ -3,13 +3,14 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
+var HTMLstatus = '<div id="status">%data%</div>';
 var HTMLheaderRole = '<div id="role">%data%</div>';
 
 var HTMLemail = '<li><a href="%data%" target="_top"><i class="fa fa-envelope-square fa-3x"></i></a></li>';
 var HTMLtwitter = '<li><a href="%data%" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a></li>';
 var HTMLgithub = '<li><a href="%data%" target="_blank"><i class="fa fa-github-square fa-3x"></i></a></li>';
 var HTMLlinkedin = '<li><a href="%data%" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a></li>';
-var HTMLlocation = '<li class="col-xs-12" style="color:white;font-weight:bold;"><i class="fa fa-map-marker fa-2x"></i><span>  %data%</span></li>';
+var HTMLlocation = '<li class="col-xs-12" style="color:white;font-weight:bold;"><i class="fa fa-map-marker fa-2x pin"></i><span>  %data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<br><span class="welcome-message welcome-text">%data%</span><br>';
@@ -93,6 +94,13 @@ function initializeMap() {
   */
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
 
+  
+  /* listen for the window resize event & trigger Google Maps to update too*/
+  $(window).resize(function() {
+    google.maps.event.trigger(map, "resize");
+  });
+  
+  
   /*
   locationFinder() returns an array of every location string from the JSONs
   written for bio, education, and work.

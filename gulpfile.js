@@ -3,6 +3,7 @@ const gulp = require('gulp'),
     concat = require('gulp-concat'),
     minifyCss = require('gulp-minify-css'),
     imagemin = require('gulp-imagemin'),
+    image = require('gulp-image'),
     pngquant = require('imagemin-pngquant'),
     uglify = require('gulp-uglify'),
     htmlreplace = require('gulp-html-replace'),
@@ -68,6 +69,7 @@ gulp.task('images', () => {
             }],
             use: [pngquant()]
         }))
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/images'));
 });
 
@@ -89,4 +91,4 @@ gulp.task('htmlreplacement', ['copy-root-files'], function() {
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('default', ['css-merge-minify', 'scripts1', 'scripts2', 'copy-root-files', 'images', 'json-to-dist','htmlreplacement']);
+gulp.task('default', ['css-merge-minify', 'scripts1', 'scripts2', 'copy-root-files', 'json-to-dist','htmlreplacement']);

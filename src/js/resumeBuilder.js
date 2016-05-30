@@ -23,7 +23,13 @@ $.getJSON("../mmoreauCV.json", function(data) {
 
         //function displaying bio info and skills
         function displayBioAndSkills() {
-            $('#topContacts').before(HTMLbioPic.replace('%data%', cvObj.bio.biopic));
+            if (cvObj.bio.status === "available") {
+              HTMLstatus = HTMLstatus.replace('%data%', 'available for new opportunities');
+            } else {
+              HTMLstatus = HTMLstatus.replace('%data%', 'currently unavailable');
+            }
+          
+            $('#topContacts').before(HTMLbioPic.replace('%data%', cvObj.bio.biopic), HTMLstatus);
             $('.welcomeTitle').after(HTMLwelcomeMsg.replace('%data%', cvObj.bio.welcomeMessage));
             $('#welcomeDiv').after(
                 //function building the skills list section on the fly
@@ -37,6 +43,12 @@ $.getJSON("../mmoreauCV.json", function(data) {
                     return newHTMLskills;
                 })()
             );
+          
+            if (cvObj.bio.status === "available") {
+              $("#status").addClass("status-available");
+            } else {
+              $("#status").addClass("status-unavailable");
+            }
         }
 
         //call three bio related functions

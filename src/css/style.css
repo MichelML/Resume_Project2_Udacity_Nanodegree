@@ -318,7 +318,8 @@ span {
 }
 
 #map {
-  max-width:500px;
+  max-width:300px;
+  max-height:300px;
 }
 
 #mapDiv {
@@ -333,7 +334,38 @@ span {
 }
 
 .img-responsive {
-  max-height:350px;
+  max-height:320px;
+}
+
+
+
+.status-available {
+  background-color: #34bf49;
+  color:white;
+  margin:20px auto;
+  max-width: 250px;
+  font-weight: bold;
+  padding:3px;
+  border-radius:10px;
+  border:3px solid white;
+  box-shadow: 0 0 10px white;
+}
+
+.status-unavailable {
+  background-color: #ff4c4c;
+  color:white;
+  margin:20px auto;
+  max-width: 250px;
+  font-weight: bold;
+  padding:3px;
+  border-radius:10px;
+  border:3px solid white;
+  box-shadow: 0 0 10px white;
+}
+
+.pin {
+  color:#fd5c63;
+  text-shadow: 0 0 2px white;
 }
 
 /********
@@ -360,6 +392,7 @@ span {
   .biopic {
     width: 150px;
   }
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -378,7 +411,12 @@ span {
   .btn-primary {
     margin:0 20px;
   }
+  
+  #map {
+    max-width:600px;
+  }
 }
+
 
 /********
  MEDIA QUERIES - END
