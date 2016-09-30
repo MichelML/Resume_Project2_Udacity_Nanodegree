@@ -1,15 +1,10 @@
 $.getJSON("../mmoreauCV.json", function(data) {
-    bio = data.bio;
-    work = data.work;
-    education = data.education;
-    travelLocations = data.travellocations;
-    birthplace = data.birthplace;
 
     // Building and displaying the header section
     data.bio.display = function(cvObj) {
         //function displaying header
         function displayHeader() {
-            $('#header').prepend(HTMLheaderName.replace('%data%', cvObj.bio.name), HTMLheaderRole.replace('%data%', cvObj.bio.role), HTMLheaderRole.replace('%data%', cvObj.bio.secondaryrole));
+            $('#header').prepend(HTMLheaderName.replace('%data%', cvObj.bio.name), HTMLheaderRole.replace('%data%', cvObj.bio.role));
         }
 
         //function displaying contact
@@ -23,32 +18,10 @@ $.getJSON("../mmoreauCV.json", function(data) {
 
         //function displaying bio info and skills
         function displayBioAndSkills() {
-            if (cvObj.bio.status === "available") {
-              HTMLstatus = HTMLstatus.replace('%data%', 'available for new opportunities');
-            } else {
-              HTMLstatus = HTMLstatus.replace('%data%', 'currently unavailable');
-            }
           
             $('#topContacts').before(HTMLbioPic.replace('%data%', cvObj.bio.biopic), HTMLstatus);
             $('.welcomeTitle').after(HTMLwelcomeMsg.replace('%data%', cvObj.bio.welcomeMessage));
-            $('#welcomeDiv').after(
-                //function building the skills list section on the fly
-                (function() {
-                    var i = 0,
-                        newHTMLskills = HTMLskillsStart.replace('</ul>', '');
-                    for (; i < cvObj.bio.skills.length; i++) {
-                        newHTMLskills += HTMLskills.replace('%data%', cvObj.bio.skills[i]);
-                    }
-                    newHTMLskills += '</ul>';
-                    return newHTMLskills;
-                })()
-            );
           
-            if (cvObj.bio.status === "available") {
-              $("#status").addClass("status-available");
-            } else {
-              $("#status").addClass("status-unavailable");
-            }
         }
 
         //call three bio related functions
@@ -57,25 +30,6 @@ $.getJSON("../mmoreauCV.json", function(data) {
         displayBioAndSkills();
         $("#header").show();
         $("#topContacts").show();
-    };
-
-    // Building and displaying the work section
-    data.work.display = function(cvObj) {
-        var i = 0,
-            newHTMLwork = '';
-
-        for (; i < cvObj.work.jobs.length; i++) {
-            newHTMLwork += HTMLworkStart.replace('</div>', '');
-            newHTMLwork += HTMLworkEmployerLink.replace('%data%', cvObj.work.jobs[i].employerlink);
-            newHTMLwork += HTMLworkEmployer.replace('%data%', cvObj.work.jobs[i].employer);
-            newHTMLwork += HTMLworkTitle.replace('%data%', cvObj.work.jobs[i].title);
-            newHTMLwork += HTMLworkDates.replace('%data%', cvObj.work.jobs[i].dates);
-            newHTMLwork += HTMLworkLocation.replace('%data%', cvObj.work.jobs[i].location);
-            newHTMLwork += HTMLworkDescription.replace('%data%', cvObj.work.jobs[i].description);
-            newHTMLwork += '</div>';
-        }
-
-        $('#workExperience').append(newHTMLwork).show();
     };
 
     // Building and displaying the projects section 
@@ -107,37 +61,6 @@ $.getJSON("../mmoreauCV.json", function(data) {
         $('#projects').append(newHTMLprojects).show();
     };
 
-    // Building and displaying the education section
-    data.education.display = function(cvObj) {
-        var i = 0,
-            newHTMLschool = '';
-
-        for (; i < cvObj.education.schools.length; i++) {
-            newHTMLschool += HTMLschoolStart.replace('</div>', '');
-            newHTMLschool += HTMLschoolNameLink.replace('%data%', cvObj.education.schools[i].url);
-            newHTMLschool += HTMLschoolName.replace('%data%', cvObj.education.schools[i].name);
-            newHTMLschool += HTMLschoolDegree.replace('%data%', cvObj.education.schools[i].degree);
-            newHTMLschool += HTMLschoolDates.replace('%data%', cvObj.education.schools[i].dates);
-            newHTMLschool += HTMLschoolLocation.replace('%data%', cvObj.education.schools[i].location);
-            newHTMLschool += HTMLschoolMajor.replace('%data%', cvObj.education.schools[i].majors[1]);
-            newHTMLschool += '</div>';
-        }
-        if (cvObj.education.onlineCourses[0]) {
-            var j = 0;
-            newHTMLschool += HTMLonlineClasses;
-            for (; j < cvObj.education.onlineCourses.length; j++) {
-                newHTMLschool += HTMLschoolStart.replace('</div>', '');
-                newHTMLschool += HTMLonlineTitleLink.replace('%data%', cvObj.education.onlineCourses[j].url);
-                newHTMLschool += HTMLonlineTitle.replace('%data%', cvObj.education.onlineCourses[j].title);
-                newHTMLschool += HTMLonlineSchool.replace('%data%', cvObj.education.onlineCourses[j].school);
-                newHTMLschool += HTMLonlineDates.replace('%data%', cvObj.education.onlineCourses[j].date);
-                newHTMLschool += '</div>';
-            }
-        }
-
-        $('#education').append(newHTMLschool).show();
-    };
-
     // Building and displaying the bottom contacts section
     data.bio.displayBottomContacts = function(cvObj) {
         $('#footerContacts').append(HTMLemail.replace('%data%', cvObj.bio.contacts.email),
@@ -149,9 +72,7 @@ $.getJSON("../mmoreauCV.json", function(data) {
 
     // calling all displaying functions
     data.bio.display(data);
-    data.work.display(data);
     data.projects.display(data);
-    data.education.display(data);
     data.bio.displayBottomContacts(data);
     $("#skills").hide();
     $("#skills-h5").click(function() {
