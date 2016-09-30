@@ -417,7 +417,21 @@ span {
   }
 }
 
+#hideeverything {
+    position:fixed;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    min-width:100%;
+    min-height:100%;
+    background-color:#002c54;
+}
 
-/********
- MEDIA QUERIES - END
-********/
+#hideeverything * {
+    text-align:center;
+    color:white;
+    text-decoration: none;
+}
