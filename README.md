@@ -1,4 +1,4 @@
-## What is this project?
+## (SITE IN CONSTRUCTION) What is this project?
 
 This project was meant to be completed while being part of the Front-End developer Nanodegree at Udacity. Throughout this project I have built my resume by writing a JS script that combine my personal information with pre-written HTML and CSS templates to generate my resume.  
   
