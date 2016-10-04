@@ -16,6 +16,6 @@ I finally have created a gulp file to automate build tasks and to optimize my we
 
 ### Preview
 
-link to the website: [michelmoreau.ca](http://michelmoreau.ca/)
+link to the website: [http://michelml.github.io/resume-builder/dist/](http://michelml.github.io/resume-builder/dist/)
 
 <img src="preview.png" width=600 alt="Website Preview" caption="Website Preview">
