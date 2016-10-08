@@ -4,7 +4,7 @@ This project was meant to be completed while being part of the Front-End develop
   
 I also have made careful adjustments to the default design of the template that was given.  
   
-I finally have created a gulp file to automate build tasks and to optimize my website before making it available online.
+I finally have created a gulp file to automate build tasks and optimize the website before making it available online.
 
 ### What was learned from this project?
 
