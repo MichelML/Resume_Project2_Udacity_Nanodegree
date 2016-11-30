@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "bio": {
         "name" : "Michel Moreau",
@@ -136,3 +137,63 @@
   "travellocations": ["Thailand", "Laos", "Cambodia", "Vietnam", "Chile", "Austria", "Italy", "Germany", "Ireland", "Maastricht, Netherlands", "Spain", "Portugal", "Costa Rica", "Bolivia", "Maine, US", "North Carolina, US", "Cuba", "Isla Holbox, Mexico"],
   "birthplace": "Montreal, Qc, Canada"
 }
+=======
+{
+    "bio": {
+        "name" : "Michel Moreau",
+        "role" : "Web Developer",
+        "status": "available",
+        "contacts" : {
+              "mobile": "on request only",
+              "twitter":"https://twitter.com/mimolap",
+              "email": "mailto:michmoreau.l@gmail.com" ,
+              "github": "https://github.com/MichelML",
+              "linkedin": "https://ca.linkedin.com/in/michelmoreau1", 
+              "location": "Quebec city, Canada"
+        },
+        "welcomeMessage": "<br>I am Michel and I am pleased to have you here.<br><br>Please reach out to me if you think I can help for something. <br><br>Enjoy the surfing!", 
+        "biopic": "images/michsam_opt.png"
+    },
+  "projects": {
+    "projects": [
+     {
+       "title":"HTML5 Arcade Game (LaddyBugger Allstar)",
+       "link": "http://michelmoreau.ca/ladybuggerallstar/",
+       "dates": "May 2016",
+       "description": "A HTML5 arcade game built as part of the Udacity's Front-End Nanodegree",
+       "images": ["images/arcadegame.png"]
+     },
+     {
+       "title":"Web Portfolio Project",
+       "link": "http://michelmoreau.ca/other/nanoportfolio/index.html",
+       "dates": "In Progress",
+       "description": "A website showing my work as a web developer",
+       "images": ["images/previewdesktop_opt.png"]
+     },
+     {
+       "title":"Personal Website Project",
+       "link": "http://michelmoreau.ca/old_site/",
+       "dates": "In Progress",
+       "description": "My old personal website made with the Freelancer Bootstrap theme",
+       "images": ["images/personalwebsite_opt.png"]
+     },
+     {
+       "title":"TODOZEN",
+       "dates": "In Progress",
+       "link": "http://michelmoreau.ca/other/todomaterial/index.html",
+       "description": "To-do list web app made with a material design framework.",
+       "images": ["images/todozen_opt.png"]
+     },
+     {
+       "title":"Diabète en Forme",
+       "link": "http://www.diabeteenforme-demo.ca/",
+       "dates": "January 2014",
+       "description": "Web service helping people with diabetes exercise regularly.",
+       "images": ["images/diabeteenforme_opt.png"]
+     }
+   ]
+  },
+  "travellocations": ["Thailand", "Laos", "Cambodia", "Vietnam", "Chile", "Austria", "Italy", "Germany", "Ireland", "Maastricht, Netherlands", "Spain", "Portugal", "Costa Rica", "Bolivia", "Maine, US", "North Carolina, US", "Cuba", "Isla Holbox, Mexico"],
+  "birthplace": "Montreal, Qc, Canada"
+}
+>>>>>>> 1c74af5e0aef03a9eb8d786e21425aa393f41d30
