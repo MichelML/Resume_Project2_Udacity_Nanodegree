@@ -10,7 +10,6 @@ const gulp = require('gulp'),
     sftp = require('gulp-sftp');
 
 
-
 gulp.task('sftp', function () {
 	return gulp.src('./dist/*')
 		.pipe(sftp({
@@ -20,8 +19,6 @@ gulp.task('sftp', function () {
                         timeout: 999999
 		}));
 });
-
-
 
 
 gulp.task('css-merge-minify', () => {
@@ -44,6 +41,7 @@ gulp.task('scripts1', () => {
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
 });
+
 
 gulp.task('scripts2', () => {
     return gulp.src(['./src/bower_components/remodal/dist/remodal.min.js',

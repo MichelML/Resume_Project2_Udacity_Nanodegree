@@ -23,13 +23,8 @@ $.getJSON("../mmoreauCV.json", function(data) {
 
         //function displaying bio info and skills
         function displayBioAndSkills() {
-            if (cvObj.bio.status === "available") {
-              HTMLstatus = HTMLstatus.replace('%data%', 'available for new opportunities');
-            } else {
-              HTMLstatus = HTMLstatus.replace('%data%', 'currently unavailable');
-            }
           
-            $('#topContacts').before(HTMLbioPic.replace('%data%', cvObj.bio.biopic), HTMLstatus);
+            $('#topContacts').before(HTMLbioPic.replace('%data%', cvObj.bio.biopic));
             $('.welcomeTitle').after(HTMLwelcomeMsg.replace('%data%', cvObj.bio.welcomeMessage));
             $('#welcomeDiv').after(
                 //function building the skills list section on the fly

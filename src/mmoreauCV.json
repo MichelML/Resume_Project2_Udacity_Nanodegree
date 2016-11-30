@@ -6,10 +6,10 @@
         "status": "available",
         "contacts" : {
               "mobile": "on request only",
-              "twitter":"https://twitter.com/mimolapo",
+              "twitter":"https://twitter.com/mimolap",
               "email": "mailto:michmoreau.l@gmail.com" ,
               "github": "https://github.com/MichelML",
-              "linkedin": "https://linkedin.com/in/michelmoreau1", 
+              "linkedin": "https://ca.linkedin.com/in/michelmoreau1", 
               "location": "Quebec city, Canada"
         },
         "welcomeMessage": "<br>I am Michel and I am pleased to have you here.<br><br>I would describe me as someone who strives to think about, improve, and create things that could bring value to people and humanity. I try to meet this goal by constantly reading books, learning autonomously and methodically, as well as taking part in research projects of different kind.<br><br>Outside of work, I also love playing basketball and soccer, backpacking, hiking, and laughing a lot.<br><br>Please reach out to me if you think I can help for something. <br><br>Enjoy the surfing!", 
@@ -112,7 +112,7 @@
     "projects": [
      {
        "title":"HTML5 Arcade Game (LaddyBugger Allstar)",
-       "link": "http://michelml.github.io/ladybugger-allstar/",
+       "link": "http://michelmoreau.ca/ladybuggerallstar/",
        "dates": "May 2016",
        "description": "A HTML5 arcade game built as part of the Udacity's Front-End Nanodegree",
        "images": ["images/arcadegame.png"]
@@ -123,6 +123,20 @@
        "dates": "In Progress",
        "description": "A website showing my work as a web developer",
        "images": ["images/previewdesktop_opt.png"]
+     },
+     {
+       "title":"Personal Website Project",
+       "link": "http://michelmoreau.ca/old_site/",
+       "dates": "In Progress",
+       "description": "My old personal website made with the Freelancer Bootstrap theme",
+       "images": ["images/personalwebsite_opt.png"]
+     },
+     {
+       "title":"TODOZEN",
+       "dates": "In Progress",
+       "link": "http://michelmoreau.ca/other/todomaterial/index.html",
+       "description": "To-do list web app made with a material design framework.",
+       "images": ["images/todozen_opt.png"]
      },
      {
        "title":"Diabète en Forme",
